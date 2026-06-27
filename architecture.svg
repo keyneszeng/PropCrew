@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1820" viewBox="0 0 1400 1820">
+<defs><filter id="sh"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter></defs>
+<rect width="1400" height="1820" fill="#f5f5f7" rx="12"/>
+<rect x="0" y="0" width="1400" height="65" fill="#1a237e" rx="12"/>
+<rect x="0" y="32" width="1400" height="33" fill="#1a237e"/>
+<text x="700" y="42" text-anchor="middle" fill="white" font-size="24" font-weight="bold" font-family="Arial">🏡 房地产销售 Agent 智能体 — 系统架构图 v1.1</text>
+<rect x="50" y="80" width="1300" height="130" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+<text x="70" y="110" fill="#1565c0" font-size="16" font-weight="bold" font-family="Arial">🌐 用户入口层</text>
+<rect x="50" y="260" width="1300" height="130" rx="10" fill="#fce4ec" stroke="#c62828" stroke-width="2"/>
+<text x="70" y="290" fill="#c62828" font-size="16" font-weight="bold" font-family="Arial">🧠 编排调度层</text>
+<rect x="50" y="440" width="1300" height="220" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="70" y="470" fill="#2e7d32" font-size="16" font-weight="bold" font-family="Arial">👥 专业 Agent 层</text>
+<rect x="50" y="700" width="1300" height="140" rx="10" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+<text x="70" y="730" fill="#e65100" font-size="16" font-weight="bold" font-family="Arial">🧰 Skill 工具箱  |  📌 新增：政策科普转化、成交案例素材化</text>
+<rect x="50" y="860" width="1300" height="140" rx="10" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="2"/>
+<text x="70" y="890" fill="#6a1b9a" font-size="16" font-weight="bold" font-family="Arial">📚 知识库 &amp; 数据层  |  📌 新增：素材模板库、违禁词表</text>
+<rect x="50" y="1030" width="1300" height="130" rx="10" fill="#e0f7fa" stroke="#00838f" stroke-width="2"/>
+<text x="70" y="1060" fill="#00838f" font-size="16" font-weight="bold" font-family="Arial">🔌 外部集成  |  📌 新增：地图 API、政策数据源</text>
+<rect x="80" y="145" width="350" height="45" rx="22" fill="#1565c0" filter="url(#sh)"/>
+<text x="255" y="172" text-anchor="middle" fill="white" font-size="14" font-family="Arial">🏢 经纪人 Web App</text>
+<rect x="480" y="145" width="350" height="45" rx="22" fill="#1565c0" filter="url(#sh)"/>
+<text x="655" y="172" text-anchor="middle" fill="white" font-size="14" font-family="Arial">📱 微信小程序 / 企微</text>
+<rect x="880" y="145" width="350" height="45" rx="22" fill="#1565c0" filter="url(#sh)"/>
+<text x="1055" y="172" text-anchor="middle" fill="white" font-size="14" font-family="Arial">🔌 API 开放接口</text>
+<line x1="255" y1="190" x2="255" y2="255" stroke="#1565c0" stroke-width="2"/>
+<line x1="655" y1="190" x2="655" y2="255" stroke="#1565c0" stroke-width="2"/>
+<line x1="1055" y1="190" x2="1055" y2="255" stroke="#1565c0" stroke-width="2"/>
+<rect x="180" y="310" width="400" height="55" rx="12" fill="#c62828" filter="url(#sh)"/>
+<text x="380" y="332" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="Arial">⚙️ Agent 主控制器</text>
+<text x="380" y="352" text-anchor="middle" fill="#ffcdd2" font-size="10" font-family="Arial">任务路由 | 状态管理 | 负载均衡</text>
+<rect x="720" y="310" width="450" height="55" rx="12" fill="#d32f2f" filter="url(#sh)"/>
+<text x="945" y="332" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="Arial">🎯 房地产内容总监 (Coordinator)</text>
+<text x="945" y="352" text-anchor="middle" fill="#ffcdd2" font-size="10" font-family="Arial">意图识别 | 任务拆解 | Agent 编排 | 质检终审</text>
+<line x1="580" y1="337" x2="715" y2="337" stroke="#c62828" stroke-width="2"/>
+<line x1="945" y1="365" x2="945" y2="435" stroke="#c62828" stroke-width="2"/>
+<rect x="70" y="500" width="380" height="65" rx="10" fill="#388e3c" filter="url(#sh)"/>
+<text x="260" y="522" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="Arial">🔍 房源卖点分析师</text>
+<text x="260" y="542" text-anchor="middle" fill="#c8e6c9" font-size="10" font-family="Arial">提炼卖点 | 风险点 | 前置合规过滤</text>
+<line x1="945" y1="435" x2="260" y2="532" stroke="#2e7d32" stroke-width="2"/>
+<rect x="510" y="500" width="380" height="65" rx="10" fill="#388e3c" filter="url(#sh)"/>
+<text x="700" y="522" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="Arial">📊 小区板块研究员</text>
+<text x="700" y="542" text-anchor="middle" fill="#c8e6c9" font-size="10" font-family="Arial">学校 | 交通 | 商业 | 竞品 | 地图 API</text>
+<line x1="945" y1="435" x2="700" y2="532" stroke="#2e7d32" stroke-width="2"/>
+<rect x="950" y="500" width="380" height="65" rx="10" fill="#388e3c" filter="url(#sh)"/>
+<text x="1140" y="522" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="Arial">🎬 短视频编导</text>
+<text x="1140" y="542" text-anchor="middle" fill="#c8e6c9" font-size="10" font-family="Arial">探房 | 口播 | 板块分析 | 避坑脚本</text>
+<line x1="945" y1="435" x2="1140" y2="532" stroke="#2e7d32" stroke-width="2"/>
+<rect x="70" y="575" width="380" height="65" rx="10" fill="#388e3c" filter="url(#sh)"/>
+<text x="260" y="597" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="Arial">✍️ 小红书文案顾问</text>
+<text x="260" y="617" text-anchor="middle" fill="#c8e6c9" font-size="10" font-family="Arial">收藏型 | 攻略型 | 同城种草 | AI检测规避</text>
+<line x1="945" y1="435" x2="260" y2="607" stroke="#2e7d32" stroke-width="2"/>
+<rect x="510" y="575" width="380" height="65" rx="10" fill="#388e3c" filter="url(#sh)"/>
+<text x="700" y="597" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="Arial">💬 线索转化顾问</text>
+<text x="700" y="617" text-anchor="middle" fill="#c8e6c9" font-size="10" font-family="Arial">评论 | 私信 | 邀约 | 异议处理话术</text>
+<line x1="945" y1="435" x2="700" y2="607" stroke="#2e7d32" stroke-width="2"/>
+<rect x="950" y="575" width="380" height="65" rx="10" fill="#388e3c" filter="url(#sh)"/>
+<text x="1140" y="597" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="Arial">⚖️ 合规质检员</text>
+<text x="1140" y="617" text-anchor="middle" fill="#c8e6c9" font-size="10" font-family="Arial">规则引擎+LLM混合 | 双层架构</text>
+<line x1="945" y1="435" x2="1140" y2="607" stroke="#2e7d32" stroke-width="2"/>
+<rect x="60" y="755" width="130" height="36" rx="8" fill="#ef6c00" filter="url(#sh)"/>
+<text x="125" y="779" text-anchor="middle" fill="white" font-size="10" font-family="Arial">卖点提炼</text>
+<rect x="205" y="755" width="130" height="36" rx="8" fill="#ef6c00" filter="url(#sh)"/>
+<text x="270" y="779" text-anchor="middle" fill="white" font-size="10" font-family="Arial">脚本生成</text>
+<rect x="350" y="755" width="130" height="36" rx="8" fill="#ef6c00" filter="url(#sh)"/>
+<text x="415" y="779" text-anchor="middle" fill="white" font-size="10" font-family="Arial">笔记撰写</text>
+<rect x="495" y="755" width="130" height="36" rx="8" fill="#ef6c00" filter="url(#sh)"/>
+<text x="560" y="779" text-anchor="middle" fill="white" font-size="10" font-family="Arial">选题策划</text>
+<rect x="640" y="755" width="130" height="36" rx="8" fill="#ef6c00" filter="url(#sh)"/>
+<text x="705" y="779" text-anchor="middle" fill="white" font-size="10" font-family="Arial">话术生成</text>
+<rect x="785" y="755" width="130" height="36" rx="8" fill="#ef6c00" filter="url(#sh)"/>
+<text x="850" y="779" text-anchor="middle" fill="white" font-size="10" font-family="Arial">合规检查</text>
+<rect x="930" y="755" width="130" height="36" rx="8" fill="#ef6c00" filter="url(#sh)"/>
+<text x="995" y="779" text-anchor="middle" fill="white" font-size="10" font-family="Arial">复盘分析</text>
+<rect x="1075" y="755" width="130" height="36" rx="8" fill="#f57c00" filter="url(#sh)"/>
+<text x="1140" y="779" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📌 政策科普转化</text>
+<rect x="1220" y="755" width="130" height="36" rx="8" fill="#f57c00" filter="url(#sh)"/>
+<text x="1285" y="779" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📌 成交案例素材化</text>
+<rect x="55" y="910" width="140" height="42" rx="6" fill="#7b1fa2" filter="url(#sh)"/>
+<text x="125" y="935" text-anchor="middle" fill="white" font-size="10" font-family="Arial">🏠 房源资料库</text>
+<rect x="210" y="910" width="140" height="42" rx="6" fill="#7b1fa2" filter="url(#sh)"/>
+<text x="280" y="935" text-anchor="middle" fill="white" font-size="10" font-family="Arial">🏫 小区/板块/POI</text>
+<rect x="365" y="910" width="140" height="42" rx="6" fill="#7b1fa2" filter="url(#sh)"/>
+<text x="435" y="935" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📋 政策法规库</text>
+<rect x="520" y="910" width="140" height="42" rx="6" fill="#7b1fa2" filter="url(#sh)"/>
+<text x="590" y="935" text-anchor="middle" fill="white" font-size="10" font-family="Arial">🏆 成交案例库</text>
+<rect x="675" y="910" width="140" height="42" rx="6" fill="#7b1fa2" filter="url(#sh)"/>
+<text x="745" y="935" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📰 发布记录库</text>
+<rect x="830" y="910" width="140" height="42" rx="6" fill="#7b1fa2" filter="url(#sh)"/>
+<text x="900" y="935" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📝 话术模板库</text>
+<rect x="985" y="910" width="140" height="42" rx="6" fill="#9c27b0" filter="url(#sh)"/>
+<text x="1055" y="935" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📌🎨 素材模板库</text>
+<rect x="1140" y="910" width="140" height="42" rx="6" fill="#9c27b0" filter="url(#sh)"/>
+<text x="1210" y="935" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📌📖 违禁词/敏感词表</text>
+<rect x="55" y="1050" width="160" height="42" rx="6" fill="#00838f" filter="url(#sh)"/>
+<text x="135" y="1075" text-anchor="middle" fill="white" font-size="10" font-family="Arial">🏢 CRM / ERP</text>
+<rect x="235" y="1050" width="160" height="42" rx="6" fill="#00838f" filter="url(#sh)"/>
+<text x="315" y="1075" text-anchor="middle" fill="white" font-size="10" font-family="Arial">🏷 贝壳/安居客</text>
+<rect x="415" y="1050" width="160" height="42" rx="6" fill="#00838f" filter="url(#sh)"/>
+<text x="495" y="1075" text-anchor="middle" fill="white" font-size="10" font-family="Arial">🎥 抖音/视频号</text>
+<rect x="595" y="1050" width="160" height="42" rx="6" fill="#00838f" filter="url(#sh)"/>
+<text x="675" y="1075" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📝 小红书</text>
+<rect x="775" y="1050" width="160" height="42" rx="6" fill="#00838f" filter="url(#sh)"/>
+<text x="855" y="1075" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📨 企业微信</text>
+<rect x="955" y="1050" width="160" height="42" rx="6" fill="#00acc1" filter="url(#sh)"/>
+<text x="1035" y="1075" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📌🗺 高德/百度地图 API</text>
+<rect x="1135" y="1050" width="160" height="42" rx="6" fill="#00acc1" filter="url(#sh)"/>
+<text x="1215" y="1075" text-anchor="middle" fill="white" font-size="10" font-family="Arial">📌🏛 政策数据源</text>
+<rect x="50" y="1180" width="1300" height="600" rx="10" fill="#fafafa" stroke="#9e9e9e" stroke-width="1" stroke-dasharray="8,4"/>
+<text x="70" y="1215" fill="#424242" font-size="15" font-weight="bold" font-family="Arial">🔄 完整工作流示例：经纪人请求 "写一篇 XX 小区的探房小红书" — 注: 双层合规检查</text>
+<rect x="60" y="1240" width="175" height="55" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" filter="url(#sh)"/>
+<text x="147" y="1255" text-anchor="middle" fill="#1565c0" font-size="9" font-weight="bold" font-family="Arial">Step 1</text>
+<text x="147" y="1272" text-anchor="middle" fill="#1565c0" font-size="11" font-weight="bold" font-family="Arial">用户输入</text>
+<rect x="265" y="1240" width="175" height="55" rx="8" fill="#fce4ec" stroke="#c62828" stroke-width="2" filter="url(#sh)"/>
+<text x="352" y="1255" text-anchor="middle" fill="#c62828" font-size="9" font-weight="bold" font-family="Arial">Step 2</text>
+<text x="352" y="1272" text-anchor="middle" fill="#c62828" font-size="11" font-weight="bold" font-family="Arial">内容总监</text>
+<text x="352" y="1288" text-anchor="middle" fill="#c62828" font-size="11" font-weight="bold" font-family="Arial">意图+任务拆解</text>
+<rect x="470" y="1240" width="175" height="55" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" filter="url(#sh)"/>
+<text x="557" y="1255" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="bold" font-family="Arial">Step 3</text>
+<text x="557" y="1272" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold" font-family="Arial">卖点分析师</text>
+<text x="557" y="1288" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold" font-family="Arial">卖点JSON+前置合规</text>
+<rect x="675" y="1240" width="175" height="55" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" filter="url(#sh)"/>
+<text x="762" y="1255" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="bold" font-family="Arial">Step 4</text>
+<text x="762" y="1272" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold" font-family="Arial">板块研究员</text>
+<text x="762" y="1288" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold" font-family="Arial">地图 API+小区报告</text>
+<rect x="880" y="1240" width="175" height="55" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" filter="url(#sh)"/>
+<text x="967" y="1255" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="bold" font-family="Arial">Step 5</text>
+<text x="967" y="1272" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold" font-family="Arial">文案顾问</text>
+<text x="967" y="1288" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold" font-family="Arial">+AI规避+素材模板</text>
+<rect x="1085" y="1240" width="175" height="55" rx="8" fill="#fff3e0" stroke="#e65100" stroke-width="2" filter="url(#sh)"/>
+<text x="1172" y="1255" text-anchor="middle" fill="#e65100" font-size="9" font-weight="bold" font-family="Arial">Step 6</text>
+<text x="1172" y="1272" text-anchor="middle" fill="#e65100" font-size="11" font-weight="bold" font-family="Arial">合规质检</text>
+<text x="1172" y="1288" text-anchor="middle" fill="#e65100" font-size="11" font-weight="bold" font-family="Arial">规则引擎+LLM双层</text>
+<line x1="235" y1="1267" x2="257" y2="1267" stroke="#9e9e9e" stroke-width="2"/>
+<polygon points="257,1262 265,1267 257,1272" fill="#9e9e9e"/>
+<line x1="440" y1="1267" x2="462" y2="1267" stroke="#9e9e9e" stroke-width="2"/>
+<polygon points="462,1262 470,1267 462,1272" fill="#9e9e9e"/>
+<line x1="645" y1="1267" x2="667" y2="1267" stroke="#9e9e9e" stroke-width="2"/>
+<polygon points="667,1262 675,1267 667,1272" fill="#9e9e9e"/>
+<line x1="850" y1="1267" x2="872" y2="1267" stroke="#9e9e9e" stroke-width="2"/>
+<polygon points="872,1262 880,1267 872,1272" fill="#9e9e9e"/>
+<line x1="1055" y1="1267" x2="1077" y2="1267" stroke="#9e9e9e" stroke-width="2"/>
+<polygon points="1077,1262 1085,1267 1077,1272" fill="#9e9e9e"/>
+<line x1="557" y1="1240" x2="557" y2="1295" stroke="#2e7d32" stroke-width="2" stroke-dasharray="4,2"/>
+<line x1="557" y1="1295" x2="675" y2="1295" stroke="#2e7d32" stroke-width="2" stroke-dasharray="4,2"/>
+<polygon points="675,1290 683,1295 675,1300" fill="#2e7d32"/>
+<rect x="60" y="1315" width="175" height="35" rx="6" fill="#f5f5f5" stroke="#616161" stroke-width="1"/>
+<text x="147" y="1337" text-anchor="middle" fill="#616161" font-size="10" font-family="Arial">请输入小区/房源名称</text>
+<rect x="265" y="1315" width="175" height="35" rx="6" fill="#f5f5f5" stroke="#616161" stroke-width="1"/>
+<text x="352" y="1337" text-anchor="middle" fill="#616161" font-size="10" font-family="Arial">确定素材来源+编排Agent</text>
+<rect x="470" y="1315" width="175" height="35" rx="6" fill="#f5f5f5" stroke="#616161" stroke-width="1"/>
+<text x="557" y="1337" text-anchor="middle" fill="#616161" font-size="10" font-family="Arial">户型/价格+合规分析</text>
+<rect x="675" y="1315" width="175" height="35" rx="6" fill="#f5f5f5" stroke="#616161" stroke-width="1"/>
+<text x="762" y="1337" text-anchor="middle" fill="#616161" font-size="10" font-family="Arial">学区/交通/商业+POI</text>
+<rect x="880" y="1315" width="175" height="35" rx="6" fill="#f5f5f5" stroke="#616161" stroke-width="1"/>
+<text x="967" y="1337" text-anchor="middle" fill="#616161" font-size="10" font-family="Arial">标题+正文+排版+规避</text>
+<rect x="1085" y="1315" width="175" height="35" rx="6" fill="#f5f5f5" stroke="#616161" stroke-width="1"/>
+<text x="1172" y="1337" text-anchor="middle" fill="#616161" font-size="10" font-family="Arial">规则匹配+LLM语义判断</text>
+<rect x="60" y="1370" width="1240" height="200" rx="8" fill="#fff3e0" stroke="#e65100" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="80" y="1395" fill="#e65100" font-size="13" font-weight="bold" font-family="Arial">⚖️ 合规质检双层架构详解</text>
+<rect x="80" y="1410" width="540" height="60" rx="8" fill="#c62828" opacity="0.9" filter="url(#sh)"/>
+<text x="350" y="1435" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">🛡️ 第一层: 规则引擎 (强制)</text>
+<text x="350" y="1455" text-anchor="middle" fill="#ffcdd2" font-size="10" font-family="Arial">违禁词匹配 | 广告法扫描 | 学区承诺 | 价格表述 | 100% 可解释</text>
+<rect x="660" y="1410" width="540" height="60" rx="8" fill="#ef6c00" opacity="0.9" filter="url(#sh)"/>
+<text x="930" y="1435" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">🤖 第二层: LLM 语义判断 (辅助)</text>
+<text x="930" y="1455" text-anchor="middle" fill="#fff3e0" font-size="10" font-family="Arial">上下文风险 | 隐含承诺 | 误导性表述 | 输出疑似信号</text>
+<text x="635" y="1445" text-anchor="middle" fill="#e65100" font-size="14" font-weight="bold" font-family="Arial">➡️</text>
+<rect x="80" y="1485" width="1120" height="40" rx="6" fill="#333" opacity="0.9"/>
+<text x="100" y="1510" fill="#4caf50" font-size="10" font-family="monospace">输出: {"status": "通过|警告|拦截", "rule_matches": ["违禁词: 升值"], "ai_concerns": ["隐含学区承诺风险"], "suggestions": ["将‘升值’改为‘保持价值’"]}</text>
+<rect x="60" y="1585" width="1240" height="80" rx="8" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="1"/>
+<text x="80" y="1615" fill="#424242" font-size="14" font-weight="bold" font-family="Arial">💡 图例</text>
+<rect x="80" y="1635" width="18" height="14" rx="3" fill="#1565c0"/>
+<text x="105" y="1647" fill="#424242" font-size="11" font-family="Arial">🌐 用户入口</text>
+<rect x="200" y="1635" width="18" height="14" rx="3" fill="#c62828"/>
+<text x="225" y="1647" fill="#424242" font-size="11" font-family="Arial">🧠 编排调度</text>
+<rect x="320" y="1635" width="18" height="14" rx="3" fill="#388e3c"/>
+<text x="345" y="1647" fill="#424242" font-size="11" font-family="Arial">👥 专业 Agent</text>
+<rect x="440" y="1635" width="18" height="14" rx="3" fill="#ef6c00"/>
+<text x="465" y="1647" fill="#424242" font-size="11" font-family="Arial">🧰 Skills</text>
+<rect x="560" y="1635" width="18" height="14" rx="3" fill="#7b1fa2"/>
+<text x="585" y="1647" fill="#424242" font-size="11" font-family="Arial">📚 知识库</text>
+<rect x="680" y="1635" width="18" height="14" rx="3" fill="#00838f"/>
+<text x="705" y="1647" fill="#424242" font-size="11" font-family="Arial">🔌 外部系统</text>
+<rect x="800" y="1635" width="18" height="14" rx="3" fill="#f57c00"/>
+<text x="825" y="1647" fill="#424242" font-size="11" font-family="Arial">📌 本次新增</text>
+<rect x="920" y="1635" width="18" height="14" rx="3" fill="#c62828"/>
+<text x="945" y="1647" fill="#424242" font-size="11" font-family="Arial">⚖️ 合规双层架构</text>
+<text x="1350" y="1655" text-anchor="end" fill="#9e9e9e" font-size="10" font-family="Arial">v1.1 | 已填补2个缺失Skill + 双层合规架构 | 2026-06-27</text>
+</svg>

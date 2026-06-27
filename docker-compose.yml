@@ -1,0 +1,83 @@
+version: '3.8'
+
+services:
+  # FastAPI API 服务
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: real-estate-agent-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./real_estate_agent.db
+      - DEFAULT_MODEL=${DEFAULT_MODEL:-deepseek-v3}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - MODEL_TEMPERATURE=${MODEL_TEMPERATURE:-0.7}
+      - MODEL_MAX_TOKENS=${MODEL_MAX_TOKENS:-2000}
+      - DEBUG=${DEBUG:-False}
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Streamlit UI 服务
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    container_name: real-estate-agent-web
+    ports:
+      - "8501:8501"
+    environment:
+      - DATABASE_URL=sqlite:///./real_estate_agent.db
+      - DEFAULT_MODEL=${DEFAULT_MODEL:-deepseek-v3}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - MODEL_TEMPERATURE=${MODEL_TEMPERATURE:-0.7}
+      - MODEL_MAX_TOKENS=${MODEL_MAX_TOKENS:-2000}
+      - DEBUG=${DEBUG:-False}
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    depends_on:
+      - api
+
+  # PostgreSQL 数据库（生产环境）
+  postgres:
+    image: postgres:16
+    container_name: real-estate-agent-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=real_estate_agent
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ChromaDB 向量数据库（Phase 2）
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: real-estate-agent-chroma
+    ports:
+      - "8001:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  chroma_data:
